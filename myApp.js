@@ -92,7 +92,7 @@ const findAndUpdate = (personName, done) => {
    {new: true},
    (err, updatedPerson) => {
      if(err) return done(err)
-      return (null, updatedPerson)
+      return done(null, updatedPerson)
    }
   )
 };
